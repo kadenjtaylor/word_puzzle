@@ -36,8 +36,6 @@ public class UtilsTest {
         var cells = Utils.computeCells(guess, target);
         var isWin = Utils.allCorrect(cells);
 
-        System.out.println(Utils.render(cells));
-
         assertEquals(cells[0].score(), CellScore.MISS);
         assertEquals(cells[1].score(), CellScore.MISS);
         assertEquals(cells[2].score(), CellScore.MISS);
@@ -54,8 +52,6 @@ public class UtilsTest {
 
         var cells = Utils.computeCells(guess, target);
         var isWin = Utils.allCorrect(cells);
-
-        System.out.println(Utils.render(cells));
 
         assertEquals(cells[0].score(), CellScore.MISPLACED_LETTER);
         assertEquals(cells[1].score(), CellScore.MISPLACED_LETTER);

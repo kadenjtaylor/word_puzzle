@@ -99,7 +99,7 @@ public class Round {
         if (this.turns.size() == 0) {
             return GameState.ONGOING;
         } else {
-            return this.turns.getLast().result();
+            return this.turns.get(this.turns.size() - 1).result();
         }
     }
 
